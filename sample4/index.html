@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>과제 4 · 살아있는 밤하늘</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <script>
+    /* Top 페이지의 iframe 안에서 열리면 캔버스만 표시 */
+    if (window.self !== window.top) document.documentElement.classList.add("embed");
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="info">
+    <p class="tag">과제 4 · 동적 작품 (애니메이션)</p>
+    <h1>살아있는 밤하늘</h1>
+    <p class="desc">과제 1의 밤하늘에 생동감을 더했습니다. 별과 달이 숨 쉬듯 반짝이고, 별똥별이 흐르며, 창문 불빛이 깜빡입니다.</p>
+  </header>
+  <script src="sketch.js"></script>
+  <section class="controls">
+    <h2>활용 기법</h2>
+    <ul>
+      <li><b>애니메이션</b> — frameCount로 별똥별이 대각선으로 흐름</li>
+      <li><b>색상 변화</b> — lerpColor() + sin()으로 하늘색이 서서히 변함</li>
+      <li><b>크기 변화</b> — sin() / cos()로 별·달이 주기적으로 커졌다 작아짐</li>
+      <li><b>random()</b> — 집 창문 불빛이 가끔 깜빡임</li>
+      <li><b>S</b> — 움직이는 GIF로 저장</li>
+    </ul>
+  </section>
+  <footer class="info">
+    <a class="back" href="../index.html">← 작품 모음으로</a>
+  </footer>
+</body>
+</html>

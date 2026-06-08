@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>과제 3 · 움직이는 캐릭터</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <script>
+    /* Top 페이지의 iframe 안에서 열리면 캔버스만 표시 */
+    if (window.self !== window.top) document.documentElement.classList.add("embed");
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="info">
+    <p class="tag">과제 3 · 동적 작품 (인터랙션)</p>
+    <h1>움직이는 캐릭터</h1>
+    <p class="desc">키보드와 마우스로 캐릭터와 상호작용할 수 있습니다.</p>
+  </header>
+  <script src="sketch.js"></script>
+  <section class="controls">
+    <h2>조작 방법</h2>
+    <ul>
+      <li><b>R / G / B</b> — 배경을 빨강 · 초록 · 파랑으로 변경</li>
+      <li><b>Space</b> — 배경 색 초기화</li>
+      <li><b>방향키</b> — 모자를 상하좌우로 이동</li>
+      <li><b>마우스 이동</b> — 시선(눈)이 마우스를 따라감</li>
+      <li><b>마우스 클릭</b> — 볼터치 + 입 벌림 효과</li>
+      <li><b>S</b> — 움직이는 GIF로 저장</li>
+    </ul>
+  </section>
+  <footer class="info">
+    <a class="back" href="../index.html">← 작품 모음으로</a>
+  </footer>
+</body>
+</html>
